@@ -13,5 +13,17 @@
     </select>
     <input type="submit" value="Display">
 </form>
+
+<?php
+    //Associative array
+    $information = ["firstName" => "Rina", "lastName" => "Behadini", "age" => "?"];
+
+    if(isset($_POST["key"])){
+        $key = $_POST["key"];
+
+        echo "The key is $key and the value for that key is $information[$key]";
+    }
+
+?>
 </body>
 </html>

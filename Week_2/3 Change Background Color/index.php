@@ -3,7 +3,7 @@
 <head>
     <title>Change Background Color</title>
 </head>
-<body>
+<body style="background-color: <?php echo isset($_POST['color']) ? $_POST['color'] : 'white' ?>">
 <form action="" method="post">
     <label for="color">Choose a color:</label>
     <select name="color" id="color">
