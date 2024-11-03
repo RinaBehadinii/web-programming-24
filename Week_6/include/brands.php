@@ -12,7 +12,7 @@ echo '<div class="panel-group category-products" id="accordian"><!--category-pro
 while ($row = mysqli_fetch_assoc($result)) {
     echo '<div class="panel panel-default">';
     echo '<div class="panel-heading">';
-    echo '<h4 class="panel-title"><a href="#">' . $row['name'] . '</a></h4>';
+    echo '<h4 class="panel-title"><a href="?bid=' . $row['bid'] . '">' . $row['name'] . '</a></h4>';
     echo ' </div>';
     echo '</div>';
 }
